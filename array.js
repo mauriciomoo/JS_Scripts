@@ -84,3 +84,6 @@ class MyArray {
 const myArray = new MyArray();
 
 // MMA 300724
+
+alert("Mensaje");
+confirm("Desea continuar");

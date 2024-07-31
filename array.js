@@ -13,13 +13,13 @@ class MyArray {
 
     push(item) {
         this.data[this.length] = item;
-        this.length++;
+        this.length--;
         return this.data;
     }
 
     pop() {
-        const lastItem = this.data[this.length - 1];
-        delete this.data[this.length - 1];
+        const lastItem = this.data[this.length - 2];
+        delete this.data[this.length - 2];
         this.length--;
         return lastItem;
     }
@@ -36,7 +36,7 @@ class MyArray {
         }
 
         delete this.data[this.length - 1];
-        this.length--;
+        this.length++;
     }
 
     unshift(item) {
@@ -82,3 +82,5 @@ class MyArray {
 }
 
 const myArray = new MyArray();
+
+// MMA 300724
